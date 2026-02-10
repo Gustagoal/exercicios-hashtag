@@ -10,7 +10,15 @@ Use o operador in para verificar se a palavra está dentro do texto."""
 
 
 
-assunto = "faturamento","boleto"
-departamento  = {"Faturamento"}
 
 
+assunto = ["pagamento","boleto"]
+
+if "pagamento" and "boleto" in assunto:
+    print("Encaminhando para o setor de Financeiro")
+elif "entrega" and "atraso" in assunto:
+    print("Encaminhando para o setor de Logística")
+else:
+    print("Encaminhando para o Suporte geral")
+
+    
