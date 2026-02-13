@@ -9,4 +9,10 @@ R$[valor] | Salário Líquido: R$[valor]"."""
 
 def calcular_folha(salario):
     imposto = 0.10
-    return salario
+    desconto = salario*imposto
+    return desconto , salario-desconto
+
+
+desconto,salario_liquido = calcular_folha(5_000)
+
+print(f"Desconto : R$ {desconto:,.2f} , | Salário líquido R$ : {salario_liquido:,.2f}")

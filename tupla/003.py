@@ -4,3 +4,15 @@ lista de tuplas onde cada tupla representa uma venda: vendas_dia = [("Monitor",
 (produto, preco_unitario, quantidade). Crie um loop for que use unpacking 
 diretamente na estrutura do loop para extrair os três valores e, para cada item, imprima: 
 "Produto: [nome] | Total: R$[preco * quantidade]". """
+
+
+vendas_dia = [("Monitor", 900, 2), ("Teclado", 150, 5), ("Mouse", 80, 10)]
+
+"Produto: [nome] | Total: R$[preco * quantidade]"
+
+for produto in vendas_dia:
+    print(f'Produto : {produto[0]} \n Total : R$ {produto[1]*produto[2]}')
+
+for produto , valor , quantidade in vendas_dia:
+    total = valor * quantidade
+    print(f"Produto :{produto} | Total : R$ {total}")
