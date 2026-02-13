@@ -5,3 +5,8 @@ retornar dois valores:
 2. O salário líquido (salário bruto - desconto). Após criar a função, chame-a para um 
 salário de **R$ 5.000,00**, faça o unpacking do retorno e exiba: "Desconto: 
 R$[valor] | Salário Líquido: R$[valor]"."""
+
+
+def calcular_folha(salario):
+    imposto = 0.10
+    return salario

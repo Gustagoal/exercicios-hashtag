@@ -4,3 +4,8 @@ valores em duas variáveis: latitude e longitude. Em seguida, exiba a mensagem:
 "Iniciando entrega. Latitude: [valor], Longitude: [valor]"."""
 
 
+coordenadas = (-23.5505, -46.6333)
+
+latitude , longitude  = coordenadas
+
+print(f"Iniciando a entrega : Latitude - {latitude} , Longitude - {longitude}")
