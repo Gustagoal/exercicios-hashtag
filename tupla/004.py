@@ -8,12 +8,15 @@ retornar o total vendido e a média das vendas. Dado o dicionário dados_filiais
 
 import statistics
 
-def analisar_vendas(**vendas):
-    total_vendido = sum(vendas)
-    media_vendida = statistics.mean(vendas)
-    return total_vendido,media_vendida
-
 dados_filiais = {"Matriz": [10000, 15000, 20000], "Filial Sul": [5000, 7000]}
 
-print(f"Filial {analisar_vendas(dados_filiais)} -> Total : R$ {analisar_vendas(dados_filiais)} , Média : R${analisar_vendas(dados_filiais)}")
+
+def analisar_vendas(vendas):
+    total = sum(vendas)
+    media = total/len(vendas)
+    return total,media
+
+for filial , venda in dados_filiais.items():
+    total , media = analisar_vendas(venda) 
+    print(f"Filial {filial} -> Total R$ : {total} , Média : R$ {media}")
 
